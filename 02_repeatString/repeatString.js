@@ -1,15 +1,13 @@
 const { TestScheduler } = require("jest");
 
 const repeatString = function(word='', repetitions=1) {
-    if (repetitions < 0) {
-        return 'ERROR';
-    }
+    if (repetitions < 0) return 'ERROR';
 
-    let repeatedString = '';
+    let string = '';
     for (i = 0; i < repetitions; i++) {
-        repeatedString += word;
+        string += word;
     }
-    return repeatedString
+    return string
 };
 
 // Do not edit below this line
